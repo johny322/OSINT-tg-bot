@@ -7,6 +7,7 @@ from aiogram.dispatcher.middlewares import BaseMiddleware
 from aiogram.utils.exceptions import Throttled
 
 
+# стандартный антифлуд, из примера в библиотеке aiogram
 class ThrottlingMiddleware(BaseMiddleware):
     """
     Simple middleware
