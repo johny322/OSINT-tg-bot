@@ -8,4 +8,5 @@ from loader import dp
 # хендлер на команду /start
 @dp.message_handler(CommandStart())
 async def bot_start(message: types.Message):
+    # отправка сообщения Привет, полное имя юзера в телеграме с основной клавиатурой
     await message.answer(f"Привет, {message.from_user.full_name}!", reply_markup=general_markup)

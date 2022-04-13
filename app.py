@@ -15,6 +15,6 @@ async def on_startup(dispatcher):
 
 
 if __name__ == '__main__':
-    # запуск бота
+    # функция запускает бота, передаём объект Dispatcher и функцию on_startup, которая отработает при запуске бота
     executor.start_polling(dp, on_startup=on_startup)
 
